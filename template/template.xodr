@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OpenDRIVE>
+    <header revMajor="2" revMinor="0" name="" version="1.00" date="" north="" south="" east="" west=""/>
+    <road name="0" length="" id="0" junction="-1">
+        <link>
+            <predecessor/>
+            <successor/>
+        </link>
+        <planView>
+            <geometry s="0" x="0" y="0" hdg="0" length="0">
+            </geometry>
+        </planView>
+        <elevationProfile>
+            <elevation s="0" a="0" b="0" c="0" d="0"/>
+        </elevationProfile>
+        <lateralProfile>
+            <superelevation s="0" a="0" b="0" c="0" d="0"/>
+        </lateralProfile>
+        <lanes>
+            <laneOffset s="0" a="0" b="0" c="0" d="0"/>
+            <laneSection s="0">
+                <left>
+                    <lane id="1" type="driving" level="false">
+                        <link>
+                            <successor id=""/>
+                        </link>
+                        <width sOffset="0" a="1.0e-1" b="0" c="0" d="0"/>
+                        <roadMark sOffset="0" type="" material="standard" color="" width="0" laneChange="none"/>
+                        <material sOffset="0" surface="0" friction="0" roughness="0"/>
+                    </lane>
+                </left>
+                <center>
+                    <lane id="0" type="none" level="false">
+                        <link>
+                            <successor id=""/>
+                        </link>
+                        <width sOffset="0" a="1.0e-1" b="0" c="0" d="0"/>
+                        <roadMark sOffset="0" type="curb" material="standard" color="" width="0" laneChange="none"/>
+                        <material sOffset="0" surface="0" friction="0" roughness="0"/>
+                    </lane>
+                </center>
+                <right>
+                    <lane id="-1" type="driving" level="false">
+                        <link>
+                            <successor id=""/>
+                        </link>
+                        <width sOffset="0" a="1.0e-1" b="0" c="0" d="0"/>
+                        <roadMark sOffset="0" type="" material="standard" color="" width="0" laneChange="none"/>
+                        <material sOffset="0" surface="0" friction="0" roughness="0"/>
+                    </lane>
+                </right>
+            </laneSection>
+        </lanes>
+        <objects>
+        </objects>
+        <signals>
+        </signals>
+    </road>
+</OpenDRIVE>

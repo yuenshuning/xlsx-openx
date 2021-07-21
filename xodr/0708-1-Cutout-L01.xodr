@@ -1,0 +1,146 @@
+<OpenDRIVE>
+    <header revMajor="2" revMinor="0" name="" version="1.00" date="" north="" south="" east="" west=""/>
+    <road name="0" length="300.0" id="0" junction="-1">
+        <link>
+            <predecessor/>
+            <successor/>
+        </link>
+        <planView>
+            <geometry s="0" x="0" y="0" hdg="0" length="300.0">
+            <line/></geometry>
+        </planView>
+        <elevationProfile>
+            <elevation s="0" a="0" b="0.006666666666666667" c="0" d="0"/>
+        </elevationProfile>
+        <lateralProfile>
+            <superelevation s="0" a="0.3" b="0" c="0" d="0"/>
+        </lateralProfile>
+        <lanes>
+            <laneOffset s="0" a="0" b="0" c="0" d="0"/>
+            <laneSection s="0">
+                <left>
+                    <lane id="1" type="driving" level="false">
+                        <link>
+                            <successor id=""/>
+                        </link>
+                        <width sOffset="0" a="8.0" b="0" c="0" d="0"/>
+                        <roadMark sOffset="0" type="broken" material="standard" color="white" width="0" laneChange="none"/>
+                        <material sOffset="0" surface="0" friction="4.0" roughness="0"/>
+                    </lane>
+                <lane id="2" type="driving" level="false">
+                        <link>
+                            <successor id=""/>
+                        </link>
+                        <width sOffset="0" a="8.0" b="0" c="0" d="0"/>
+                        <roadMark sOffset="0" type="broken" material="standard" color="white" width="0" laneChange="none"/>
+                        <material sOffset="0" surface="0" friction="4.0" roughness="0"/>
+                    </lane>
+                <lane id="3" type="driving" level="false">
+                        <link>
+                            <successor id=""/>
+                        </link>
+                        <width sOffset="0" a="8.0" b="0" c="0" d="0"/>
+                        <roadMark sOffset="0" type="broken" material="standard" color="white" width="0" laneChange="none"/>
+                        <material sOffset="0" surface="0" friction="4.0" roughness="0"/>
+                    </lane>
+                <lane id="4" type="driving" level="false">
+                        <link>
+                            <successor id=""/>
+                        </link>
+                        <width sOffset="0" a="8.0" b="0" c="0" d="0"/>
+                        <roadMark sOffset="0" type="broken" material="standard" color="white" width="0" laneChange="none"/>
+                        <material sOffset="0" surface="0" friction="4.0" roughness="0"/>
+                    </lane>
+                <lane id="5" type="driving" level="false">
+                        <link>
+                            <successor id=""/>
+                        </link>
+                        <width sOffset="0" a="8.0" b="0" c="0" d="0"/>
+                        <roadMark sOffset="0" type="broken" material="standard" color="white" width="0" laneChange="none"/>
+                        <material sOffset="0" surface="0" friction="4.0" roughness="0"/>
+                    </lane>
+                <lane id="6" type="driving" level="false">
+                        <link>
+                            <successor id=""/>
+                        </link>
+                        <width sOffset="0" a="8.0" b="0" c="0" d="0"/>
+                        <roadMark sOffset="0" type="broken" material="standard" color="white" width="0" laneChange="none"/>
+                        <material sOffset="0" surface="0" friction="4.0" roughness="0"/>
+                    </lane>
+                <lane id="7" type="driving" level="false">
+                        <link>
+                            <successor id=""/>
+                        </link>
+                        <width sOffset="0" a="8.0" b="0" c="0" d="0"/>
+                        <roadMark sOffset="0" type="broken" material="standard" color="white" width="0" laneChange="none"/>
+                        <material sOffset="0" surface="0" friction="4.0" roughness="0"/>
+                    </lane>
+                </left>
+                <center>
+                    <lane id="0" type="none" level="false">
+                        <link>
+                            <successor id=""/>
+                        </link>
+                        <width sOffset="0" a="1.0e-1" b="0" c="0" d="0"/>
+                        <roadMark sOffset="0" type="curb" material="standard" color="" width="0" laneChange="none"/>
+                        <material sOffset="0" surface="0" friction="0" roughness="0"/>
+                    </lane>
+                </center>
+                <right>
+                    <lane id="-1" type="driving" level="false">
+                        <link>
+                            <successor id=""/>
+                        </link>
+                        <width sOffset="0" a="8.0" b="0" c="0" d="0"/>
+                        <roadMark sOffset="0" type="broken" material="standard" color="white" width="0" laneChange="none"/>
+                        <material sOffset="0" surface="0" friction="4.0" roughness="0"/>
+                    </lane>
+                <lane id="-2" type="driving" level="false">
+                        <link>
+                            <successor id=""/>
+                        </link>
+                        <width sOffset="0" a="8.0" b="0" c="0" d="0"/>
+                        <roadMark sOffset="0" type="broken" material="standard" color="white" width="0" laneChange="none"/>
+                        <material sOffset="0" surface="0" friction="4.0" roughness="0"/>
+                    </lane>
+                <lane id="-3" type="driving" level="false">
+                        <link>
+                            <successor id=""/>
+                        </link>
+                        <width sOffset="0" a="8.0" b="0" c="0" d="0"/>
+                        <roadMark sOffset="0" type="broken" material="standard" color="white" width="0" laneChange="none"/>
+                        <material sOffset="0" surface="0" friction="4.0" roughness="0"/>
+                    </lane>
+                <lane id="-4" type="driving" level="false">
+                        <link>
+                            <successor id=""/>
+                        </link>
+                        <width sOffset="0" a="8.0" b="0" c="0" d="0"/>
+                        <roadMark sOffset="0" type="broken" material="standard" color="white" width="0" laneChange="none"/>
+                        <material sOffset="0" surface="0" friction="4.0" roughness="0"/>
+                    </lane>
+                <lane id="-5" type="driving" level="false">
+                        <link>
+                            <successor id=""/>
+                        </link>
+                        <width sOffset="0" a="8.0" b="0" c="0" d="0"/>
+                        <roadMark sOffset="0" type="broken" material="standard" color="white" width="0" laneChange="none"/>
+                        <material sOffset="0" surface="0" friction="4.0" roughness="0"/>
+                    </lane>
+                <lane id="-6" type="driving" level="false">
+                        <link>
+                            <successor id=""/>
+                        </link>
+                        <width sOffset="0" a="8.0" b="0" c="0" d="0"/>
+                        <roadMark sOffset="0" type="broken" material="standard" color="white" width="0" laneChange="none"/>
+                        <material sOffset="0" surface="0" friction="4.0" roughness="0"/>
+                    </lane>
+                </right>
+            </laneSection>
+        </lanes>
+        <objects>
+        <object type="building" s="1.5e+2" t="5.9"/><object s="10" t="10"/><object type="-1.0" s="1.7e+1" t="-4.3"/></objects>
+        <signals>
+        <signal type="1000001" subtype="-1" s="3.5e+1" t="-4.47"/></signals>
+    </road>
+</OpenDRIVE>
