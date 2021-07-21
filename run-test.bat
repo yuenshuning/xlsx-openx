@@ -1,1 +1,1 @@
-"/home/guardstrike/code/esmini-demo_ubuntu/esmini-demo/bin/esmini" --window 60 60 1024 576 --osc ./xosc/0708-1-Cutout-L01.xosc --road_features on
+"/home/guardstrike/code/esmini-demo_ubuntu/esmini-demo/bin/esmini" --window 60 60 1024 576 --osc ./xosc/0708-1-Cutout-L01-C01.xosc --road_features on

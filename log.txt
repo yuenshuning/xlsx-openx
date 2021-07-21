@@ -1,0 +1,58 @@
+esmini GIT REV: 08cf04b
+esmini GIT TAG: v2.7.3
+esmini GIT BRANCH: tags/v2.7.3^0
+esmini BUILD VERSION: 2.7.3.build.1364
+Loading 0708-1-Cutout-L01-C01.xosc (v2.0)
+OpenDRIVE: /home/guardstrike/code/xlsx-openx/xodr/0708-1-Cutout-L01-C01.xodr
+Scenegraph: None
+Unsupported element type: 
+
+Unsupported element type: 
+
+Signal dynamic check error
+unknown dynamic signal identification:  (road ids=0)
+
+Road signal orientation error
+unknown road signal orientation:  (road ids=0)
+
+Road object orientation error
+unknown road object orientation:  (road ids=0)
+
+Road object orientation error
+unknown road object orientation:  (road ids=0)
+
+Road object orientation error
+unknown road object orientation:  (road ids=0)
+
+Failed to look up entry  in catalog VehicleCatalog
+Could not find catalog vehicle, creating a random car as fall-back
+0.000: Init Ego LongitudinalAction standbyState -> endTransition -> completeState
+0.000: Ego New position:
+0.000: Pos(-0.00, -4.00, -1.18) Rot(0.00, 6.28, 0.30) roadId 0 laneId -1 offset 0.00 t -4.00
+0.000: Init Ego TeleportAction standbyState -> startTransition -> runningState
+0.000: Init Vut LongitudinalAction standbyState -> endTransition -> completeState
+0.000: Vut New position:
+0.000: Pos(-20.00, -0.90, -0.40) Rot(0.00, 0.00, 0.00) roadId 0 laneId -1 offset 3.10 t -0.90
+0.000: Init Vut TeleportAction standbyState -> startTransition -> runningState
+0.000: Init Ego TeleportAction runningState -> stopTransition -> completeState
+0.000: Init Vut TeleportAction runningState -> stopTransition -> completeState
+0.000: No scenegraph 3D model loaded. Generating a simplistic one...
+0.000: No filename specified for model! - creating a dummy model
+0.010: Trigger /------------------------------------------------
+0.010: no name SimulationTimeCondition == true, 0.0100 > 0.00 edge: Rising
+0.010: Trigger  ------------------------------------------------/
+0.010:  standbyState -> startTransition -> runningState
+0.010: No next road
+
+2.010: Trigger /------------------------------------------------
+2.010: no name SimulationTimeCondition == true, 2.0100 > 2.00 edge: Rising
+2.010: Trigger  ------------------------------------------------/
+2.027:  standbyState -> startTransition -> runningState
+2.027:  standbyState -> startTransition -> runningState
+4.994:  complete after 1 execution
+5.011:  runningState -> endTransition -> completeState
+5.011:  runningState -> endTransition -> completeState
+8.011: Trigger /------------------------------------------------
+8.011: no name SimulationTimeCondition == true, 8.0110 > 8.00 edge: NONE
+8.011: Trigger  ------------------------------------------------/
+Closing

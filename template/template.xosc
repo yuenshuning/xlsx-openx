@@ -14,10 +14,10 @@
     </RoadNetwork>
     <Entities>
         <ScenarioObject name="$ego">
-            <CatalogReference catalogName="VehicleCatalog" entryName="car_white"/>
+            <CatalogReference catalogName="VehicleCatalog" entryName=""/>
         </ScenarioObject>
         <ScenarioObject name="$vut">
-            <CatalogReference catalogName="VehicleCatalog" entryName="car_red"/>
+            <CatalogReference catalogName="VehicleCatalog" entryName=""/>
         </ScenarioObject>
     </Entities>
     <Storyboard>

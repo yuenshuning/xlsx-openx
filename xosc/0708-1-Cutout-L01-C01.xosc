@@ -2,7 +2,7 @@
     <FileHeader revMajor="2" revMinor="0" author="" date="" decription=""/>
     <ParameterDeclarations>
         <ParameterDeclaration parameterType="string" name="ego" value="Ego"/>
-        <ParameterDeclaration parameterType="string" name="vut" value="$vut"/>
+        <ParameterDeclaration parameterType="string" name="vut" value="Vut"/>
     </ParameterDeclarations>
     <CatalogLocations>
         <VehicleCatalog>
@@ -10,11 +10,11 @@
         </VehicleCatalog>
     </CatalogLocations>
     <RoadNetwork>
-        <LogicFile filepath="/home/guardstrike/code/xlsx-openx/xodr/0708-1-Cutout-L01.xodr"/>
+        <LogicFile filepath="/home/guardstrike/code/xlsx-openx/xodr/0708-1-Cutout-L01-C01.xodr"/>
     </RoadNetwork>
     <Entities>
         <ScenarioObject name="$ego">
-            <CatalogReference catalogName="VehicleCatalog" entryName="car_white"/>
+            <CatalogReference catalogName="VehicleCatalog" entryName=""/>
         </ScenarioObject>
         <ScenarioObject name="$vut">
             <CatalogReference catalogName="VehicleCatalog" entryName="car_red"/>
@@ -29,7 +29,7 @@
                             <SpeedAction>
                                 <SpeedActionDynamics dynamicsDimension="time" dynamicsShape="step" value="1"/>
                                 <SpeedActionTarget>
-                                    <AbsoluteTargetSpeed value="20"/>
+                                    <AbsoluteTargetSpeed value="20.0"/>
                                 </SpeedActionTarget>
                             </SpeedAction>
                         </LongitudinalAction>
@@ -50,7 +50,7 @@
                             <SpeedAction>
                                 <SpeedActionDynamics dynamicsDimension="time" dynamicsShape="step" value="1"/>
                                 <SpeedActionTarget>
-                                    <AbsoluteTargetSpeed value="25"/>
+                                    <AbsoluteTargetSpeed value="25.0"/>
                                 </SpeedActionTarget>
                             </SpeedAction>
                         </LongitudinalAction>

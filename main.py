@@ -91,8 +91,8 @@ def createAcr(road):
 
 def importXlsx(path):
     data = xlrd.open_workbook(path, encoding_override="utf-8")
-    base = data.sheet_by_name("逻辑场景描述")
-    open_drive = data.sheet_by_name("逻辑场景-道路类型参数库")
+    base = data.sheet_by_name("具体场景描述")
+    open_drive = data.sheet_by_name("具体场景-道路类型参数库")
     return base, open_drive
 
 def exportXodr(base_xodr, path):
@@ -166,8 +166,8 @@ def extendXodr(base_xodr, base_data, road_data):
     road_signal_type = road_signal_type.split(',')
     road_signal.set('type', str(road_signal_type[0]))
     road_signal.set('subtype', str(road_signal_type[1]))
-    # 交通标识牌位置 15列
-    road_signal_pos = re.sub('\[|\]|\s*', '', base_data[15].value)
+    # 交通标识牌位置 14列
+    road_signal_pos = re.sub('\[|\]|\s*', '', base_data[14].value)
     road_signal_pos = road_signal_pos.split(',')
     road_signal.set('s', str(road_signal_pos[0]))
     road_signal.set('t', str(road_signal_pos[1]))
@@ -186,38 +186,36 @@ def extendXosc(base_xosc, base_data, road_file_path):
     # 主车
     ego_action = private_actions[0]
     ego_private_actions = ego_action.findall('PrivateAction')  
-    # 主车触发时刻纵向位置17列&横向位置18列&朝向19列
+    # 主车触发时刻纵向位置16列&横向位置17列&朝向18列
     ego_tel_action = ego_private_actions[1].find('TeleportAction')
-    ego_tel_action.find('Position').find('LanePosition').set('s', str(base_data[17].value))
-    ego_tel_action.find('Position').find('LanePosition').set('laneId', str(base_data[18].value))
-    ego_tel_action.find('Position').find('LanePosition').find('Orientation').set('h', str(base_data[19].value))
-    # 主车触发时刻纵向速度20列
-    ego_longit_speed = re.sub('\[|\]|\s*', '', base_data[20].value)
-    ego_longit_speed = ego_longit_speed.split(',')
+    ego_tel_action.find('Position').find('LanePosition').set('s', str(base_data[16].value))
+    ego_tel_action.find('Position').find('LanePosition').set('laneId', str(base_data[17].value))
+    ego_tel_action.find('Position').find('LanePosition').find('Orientation').set('h', str(base_data[18].value))
+    # 主车触发时刻纵向速度19列
     ego_longi_action = ego_private_actions[0].find('LongitudinalAction')
-    ego_longi_action.find('SpeedAction').find('SpeedActionTarget').find('AbsoluteTargetSpeed').set('value', ego_longit_speed[0])
+    ego_longi_action.find('SpeedAction').find('SpeedActionTarget').find('AbsoluteTargetSpeed').set('value', str(base_data[19].value))
     # 目标车
     vut_action = private_actions[1]
-    vut_private_actions = vut_action.findall('PrivateAction')  
-    # 目标车触发时刻纵向位置24列&横向位置25列&航向角26列
-    vut_tel_action = vut_private_actions[1].find('TeleportAction')    
-    vut_tel_action.find('Position').find('RelativeRoadPosition').set('ds', str(base_data[24].value))
-    vut_tel_action.find('Position').find('RelativeRoadPosition').set('dt', str(base_data[25].value))
-    vut_tel_action.find('Position').find('RelativeRoadPosition').find('Orientation').set('h', str(base_data[26].value))
-    # 目标车触发时刻纵向速度27列
-    vut_longit_speed = re.sub('\[|\]|\s*', '', base_data[27].value)
-    vut_longit_speed = vut_longit_speed.split(',')
+    vut_private_actions = vut_action.findall('PrivateAction')
+    # 目标车类型22列
+    root.find('Entities').findall('ScenarioObject')[1].find('CatalogReference').set('entryName', str(base_data[22].value))
+    # 目标车触发时刻纵向位置23列&横向位置24列&航向角25列
+    vut_tel_action = vut_private_actions[1].find('TeleportAction')
+    vut_tel_action.find('Position').find('RelativeRoadPosition').set('ds', str(base_data[23].value))
+    vut_tel_action.find('Position').find('RelativeRoadPosition').set('dt', str(base_data[24].value))
+    vut_tel_action.find('Position').find('RelativeRoadPosition').find('Orientation').set('h', str(base_data[25].value))
+    # 目标车触发时刻纵向速度26列
     vut_longi_action = vut_private_actions[0].find('LongitudinalAction')
-    vut_longi_action.find('SpeedAction').find('SpeedActionTarget').find('AbsoluteTargetSpeed').set('value', str(vut_longit_speed[0]))
-    # 横向动作类型31列AF
+    vut_longi_action.find('SpeedAction').find('SpeedActionTarget').find('AbsoluteTargetSpeed').set('value', str(base_data[26].value))
+    # 横向动作类型30列
     private_actions = root.find('Storyboard').find('Story').find('Act').find('ManeuverGroup').find(
         'Maneuver').find('Event').find('Action').find('PrivateAction').find('LateralAction').find(
-        'LaneChangeAction').find('LaneChangeActionDynamics').set('dynamicsShape', str(base_data[31].value))
+        'LaneChangeAction').find('LaneChangeActionDynamics').set('dynamicsShape', str(base_data[30].value))
     private_actions = root.find('Storyboard').find('Story').find('Act').find('ManeuverGroup').find(
         'Maneuver').find('Event').find('Action').find('PrivateAction').find('LateralAction').find(
         'LaneChangeAction').find('LaneChangeActionDynamics').set('value', '3')
-    # 动作持续时间32列A
-    action_dur = re.sub('\[|\]|\s*', '', base_data[32].value)
+    # 动作持续时间31列
+    action_dur = re.sub('\[|\]|\s*', '', base_data[31].value)
     action_dur = action_dur.split(',')
     private_actions = root.find('Storyboard').find('Story').find('Act').find('ManeuverGroup').find(
         'Maneuver').find('Event').find('StartTrigger').find('ConditionGroup').find('Condition').find(
